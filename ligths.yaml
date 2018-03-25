@@ -1,0 +1,57 @@
+### Basement Desk Light ###
+  - platform: mqtt
+    name: "Desk Light"
+    command_topic: "cmnd/sonoff_touch/power"
+    state_topic: "stat/sonoff_touch/POWER"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+
+### Lupe's Salt rock Lamp ###
+  - platform: mqtt
+    name: "Lupe's Salt rock Lamp"
+    command_topic: "cmnd/saltRockLamp/power"
+    state_topic: "stat/saltRockLamp/POWER"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+
+### Kitchen cabinets LED lights ###
+  - platform: mqtt
+    name: "Kitchen Cabinet"
+    command_topic: "cmnd/sonoff-3/power"
+    state_topic: "stat/sonoff-3/POWER"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    retaim: true
+
+### Back door Light ###
+  - platform: mqtt
+    name: "Back Door Light"
+    command_topic: "cmnd/backDoor/power"
+    state_topic: "stat/backDoor/POWER"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    retaim: true
+
+### Osram Lights ###
+  - platform: osramlightify
+    host: !secret lightify_id
+
+### Test RGB
+
+  - platform: mqtt_json
+    name: mqtt_json_light_2
+    state_topic: "home/rgb1"
+    command_topic: "home/rgb1/set"
+    brightness: true
+    rgb: true
+    effect: true
+    effect_list: [colorfade_slow, colorfade_fast, flash]
+    optimistic: false
+    qos: 0
+

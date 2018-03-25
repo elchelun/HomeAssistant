@@ -1,0 +1,4 @@
+#  platform: radiotherm
+#  host:
+#  - !secret term_host
+#  hold_temp: True

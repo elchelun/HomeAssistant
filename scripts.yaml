@@ -1,0 +1,35 @@
+'1507158973956':
+  alias: Night Night
+  sequence:
+  - alias: All lights off
+    data:
+      entity_id: group.all_lights
+    service: light.turn_off
+  - alias: All switches off
+    data:
+      entity_id: switch.andy_light
+    service: switch.turn_off
+  - data:
+      entity_id: switch.arcade
+    service: switch.turn_off
+  - data:
+      entity_id: switch.desk_side_light
+    service: switch.turn_off
+  - data:
+      entity_id: switch.gazebo
+    service: switch.turn_off
+  - data:
+      entity_id: switch.laundry_light
+    service: switch.turn_off
+  - data:
+      entity_id: switch.lupe_desk_lamp
+    service: switch.turn_off
+  - data:
+      entity_id: switch.main_light
+    service: switch.turn_off
+  - data:
+      entity_id: switch.master_bedroom_switch
+    service: switch.turn_off
+  - data:
+      message: Good night everyone!
+    service: notify.pushbullet

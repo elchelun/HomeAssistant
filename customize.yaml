@@ -1,0 +1,236 @@
+#########################################################
+#                       Lights                          #
+#########################################################
+  light.lupes_salt_rock_lamp:
+    friendly_name: Night Table Light
+    emulated_hue_name: Night Table
+    icon: mdi:lamp
+
+  light.kitchen_cabinet_lights:
+    friendly_name: Kitchen Cabinet Light
+    emulated_hue_name: Kitchen Cabinet
+
+  light.hallway_light_level:
+    friendly_name: Hallway
+    emulated_hue_name: Hallway
+    icon: mdi:ceiling-light
+
+  light.lupes_reading_light:
+    friendly_name: Lupe's Reading
+    emulated_hue_name: Lupe's Reading
+    icon: mdi:lamp
+
+  light.livingroom_level:
+    friendly_name: Livingroom
+    emulated_hue_name: Livingroom Light
+
+  light.kitchen_level:
+    friendly_name: Kitchen
+    icon: mdi:ceiling-light
+    emulated_hue_name: Kitchen Main Ligth
+
+  light.makeup_top:
+    friendly_name: Couch Top
+    icon: mdi:lamp
+
+  light.makeup_bottom:
+    friendly_name: Couch Bottom
+    icon: mdi:lamp
+
+
+#########################################################
+#                       Switches                        #
+#########################################################
+  switch.master_bedroom_switch:
+    friendly_name: Master Bedroom
+    emulated_hue_name: Master Bedroom
+    icon: mdi:ceiling-light
+
+  switch.livingroom_tv:
+    icon: mdi:television-classic
+    emulated_hue_hidden: true
+
+  switch.on_and_off:
+    icon: mdi:led-strip
+    emulated_hue_hidden: true
+
+  switch.redon_or_blueoff:
+    icon: mdi:led-strip
+    emulated_hue_hidden: true
+
+  switch.greenon_yellowoff:
+    icon: mdi:led-strip
+    emulated_hue_hidden: true
+
+  switch.orangeon_lightblueoff:
+    icon: mdi:led-strip
+    emulated_hue_hidden: true
+
+  switch.pinkon_whiteoff:
+    icon: mdi:led-strip
+    emulated_hue_hidden: true
+
+  switch.fadeon_jumpoff:
+    icon: mdi:led-strip
+    emulated_hue_hidden: true
+
+  switch.flashon_alloff:
+    icon: mdi:led-strip
+    emulated_hue_hidden: true
+
+  switch.arcade:
+    icon: mdi:gamepad-variant
+
+  switch.lupe_desk_lamp:
+    assumed_state: false
+    icon: mdi:lamp
+
+  switch.christmas_tree_lights:
+    assumed_state: false
+    icon: mdi:pine-tree
+
+  switch.gazebo:
+    assumed_state: false
+    icon: mdi:ceiling-light
+
+  switch.main_light:
+    assumed_state: false
+    icon: mdi:ceiling-light
+
+  switch.andy_light:
+    assumed_state: false
+    icon: mdi:ceiling-light
+
+  switch.desk_side_light:
+    assumed_state: false
+    icon: mdi:ceiling-light
+
+  switch.laundry_light:
+    assumed_state: false
+    icon: mdi:ceiling-light
+
+#########################################################
+#                       Weather                         #
+#########################################################
+### Dark Sky ###
+  sensor.weather_summary:
+    friendly_name: Weather Summary
+  sensor.weather_temperature:
+    friendly_name: Temperature
+  sensor.weather_apparent_temperature:
+    friendly_name: Feels Like Temp
+  sensor.weather_daily_high_temperature:
+    friendly_name: MAX Temp
+  sensor.weather_daily_low_temperature:
+    friendly_name: MIN Temp
+  sensor.weather_uv_index:
+    friendly_name: UV Index
+  sensor.weather_precip_type:
+    friendly_name: Precipitation Type
+  sensor.weather_precip_intensity:
+    friendly_name: Prep. Intensity
+  sensor.weather_precip_probability:
+    friendly_name: Prep. Probability
+  sensor.weather_wind_speed:
+    friendly_name: Wind Speed
+  sensor.weather_cloud_cover:
+    friendly_name: Cloud Level
+  sensor.weather_humidity:
+    friendly_name: Humidity
+  sensor.weather_visibility:
+    friendly_name: Visibility
+  sensor.weather_minutely_summary:
+    friendly_name: By the Minute
+  sensor.weather_hourly_summary:
+    friendly_name: By the Hour
+  sensor.weather_daily_summary:
+    friendly_name: By the Day
+
+
+#########################################################
+#                       Groups                          #
+#########################################################
+
+  group.kitchen:
+    emulated_hue_hidden: true
+
+  group.living_room:
+    emulated_hue_hidden: true
+
+  group.master_bedroom:
+    emulated_hue_hidden: true
+
+  group.guest_room:
+    emulated_hue_hidden: true
+
+  group.bathroom:
+    emulated_hue_hidden: true
+
+  group.hallway:
+    emulated_hue_hidden: true
+
+  group.lights:
+    emulated_hue_hidden: true
+
+  group.basement_sensors:
+    emulated_hue_hidden: true
+
+  group.frontyard:
+    emulated_hue_hidden: true
+
+  group.sideyard:
+    emulated_hue_hidden: true
+
+  group.backyard:
+    emulated_hue_hidden: true
+
+  group.daily_ones:
+    emulated_hue_hidden: true
+
+  group.work_days:
+    emulated_hue_hidden: true
+
+  group.holidays:
+    emulated_hue_hidden: true
+
+  group.scripts:
+    emulated_hue_hidden: true
+
+  group.current_weather:
+    emulated_hue_hidden: true
+
+  group.all_lights:
+    emulated_hue_hidden: true
+
+  group.all_automations:
+    emulated_hue_hidden: true
+
+  group.all_scripts:
+    emulated_hue_hidden: true
+
+  group.all_switches:
+    emulated_hue_hidden: true
+
+  group.tv_led:
+    emulated_hue_hidden: true
+
+  group.sensor_node_1_card:
+    emulated_hue_hidden: true
+
+  group.people:
+    emulated_hue_hidden: true
+
+
+
+#########################################################
+#                       Sensors                         #
+#########################################################
+
+  sensor.frontdoor_status:
+    icon: mdi:door
+
+  sensor.backdoor_status:
+    icon: mdi:door
+
+  sensor.basementdoor_status:
+    icon: mdi:door 

@@ -1,0 +1,4 @@
+  default: critical
+  logs:
+    homeassistant.components: critical
+    homeassistant.components.climate: debug

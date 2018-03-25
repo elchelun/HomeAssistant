@@ -1,0 +1,19 @@
+  gr1:
+    name: Thermostate
+    entities:
+      - climate.first_floor
+    hours_to_show: 120
+    refresh: 60
+  gr2:
+    name: Outdoors Lights
+    entities:
+      - light.front_right
+      - light.front_left
+      - light.back_door_light
+    hours_to_show: 120
+  gr3:
+    name: Device Tracker
+    entities:
+      - device_tracker.chelo
+      - device_tracker.lupe
+    hours_to_show: 120

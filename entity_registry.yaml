@@ -1,0 +1,111 @@
+switch.master_bedroom_switch:
+  platform: zwave
+  unique_id: 2-72057594076282880
+light.hallway_light_level:
+  platform: zwave
+  unique_id: 3-72057594093076481
+binary_sensor.front_door_sensor:
+  platform: zwave
+  unique_id: 5-72057594126794752
+sensor.front_door_alarm_type:
+  platform: zwave
+  unique_id: 5-72057594127859713
+sensor.front_door_alarm_level:
+  platform: zwave
+  unique_id: 5-72057594127859729
+sensor.front_door_sourcenodeid:
+  platform: zwave
+  unique_id: 5-72057594127859745
+sensor.front_door_access_control:
+  platform: zwave
+  unique_id: 5-72057594127859857
+sensor.front_door_burglar:
+  platform: zwave
+  unique_id: 5-72057594127859873
+sensor.front_door_clock:
+  platform: zwave
+  unique_id: 5-72057594127859937
+binary_sensor.back_door_sensor:
+  platform: zwave
+  unique_id: 6-72057594143571968
+sensor.back_door_alarm_type:
+  platform: zwave
+  unique_id: 6-72057594144636929
+sensor.back_door_alarm_level:
+  platform: zwave
+  unique_id: 6-72057594144636945
+sensor.back_door_sourcenodeid:
+  platform: zwave
+  unique_id: 6-72057594144636961
+sensor.back_door_access_control:
+  platform: zwave
+  unique_id: 6-72057594144637073
+sensor.back_door_burglar:
+  platform: zwave
+  unique_id: 6-72057594144637089
+sensor.back_door_power_management:
+  platform: zwave
+  unique_id: 6-72057594144637105
+sensor.back_door_system:
+  platform: zwave
+  unique_id: 6-72057594144637121
+sensor.back_door_clock:
+  platform: zwave
+  unique_id: 6-72057594144637153
+binary_sensor.basement_door_sensor:
+  platform: zwave
+  unique_id: 7-72057594160349184
+sensor.basement_door_alarm_type:
+  platform: zwave
+  unique_id: 7-72057594161414145
+sensor.basement_door_alarm_level:
+  platform: zwave
+  unique_id: 7-72057594161414161
+sensor.basement_door_sourcenodeid:
+  platform: zwave
+  unique_id: 7-72057594161414177
+sensor.basement_door_access_control:
+  platform: zwave
+  unique_id: 7-72057594161414289
+sensor.basement_door_burglar:
+  platform: zwave
+  unique_id: 7-72057594161414305
+sensor.basement_door_system:
+  platform: zwave
+  unique_id: 7-72057594161414337
+sensor.basement_door_clock:
+  platform: zwave
+  unique_id: 7-72057594161414369
+light.livingroom_level:
+  platform: zwave
+  unique_id: 8-72057594176962561
+light.kitchen_level:
+  platform: zwave
+  unique_id: 9-72057594193739777
+sensor.alarm_type:
+  platform: zwave
+  unique_id: 10-72057594211745793
+sensor.alarm_level:
+  platform: zwave
+  unique_id: 10-72057594211745809
+binary_sensor.sensor:
+  platform: zwave
+  unique_id: 10-72057594210680832
+sensor.vision_zd2105us5_recessed_doorwindow_sensor_sourcenodeid:
+  platform: zwave
+  unique_id: 10-72057594211745825
+sensor.vision_zd2105us5_recessed_doorwindow_sensor_access_control:
+  platform: zwave
+  unique_id: 10-72057594211745937
+sensor.vision_zd2105us5_recessed_doorwindow_sensor_burglar:
+  platform: zwave
+  unique_id: 10-72057594211745953
+sensor.vision_zd2105us5_recessed_doorwindow_sensor_power_management:
+  platform: zwave
+  unique_id: 10-72057594211745969
+sensor.vision_zd2105us5_recessed_doorwindow_sensor_system:
+  platform: zwave
+  unique_id: 10-72057594211745985
+sensor.vision_zd2105us5_recessed_doorwindow_sensor_emergency:
+  platform: zwave
+  unique_id: 10-72057594211746001

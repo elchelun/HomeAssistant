@@ -1,0 +1,16 @@
+secrets.yaml
+home-assistant_v2.db
+zwcfg_0xe32e67f6.xml
+emulated_hue_ids.json
+known_devices.yaml
+.cloud
+deps
+home-assistant.log
+options.xml
+OZW_Log.txt
+pyozw.sqlite
+python_scripts
+tts
+.uuid
+zwscene.xml
+

@@ -1,0 +1,438 @@
+- action:
+  - data:
+      message: Halloween Front Lights and Decorations are ON
+    service: notify.pushbullet
+  - data:
+      entity_id: light.front_left
+      rgb_color:
+      - 255
+      - 69
+      - 0
+    service: light.turn_on
+  - data:
+      entity_id: switch.decorations
+    service: switch.turn_on
+  - data:
+      entity_id: light.front_right
+      rgb_color:
+      - 128
+      - 0
+      - 128
+    service: light.turn_on
+  - data:
+      entity_id: light.back_door_light
+    service: light.turn_on
+  alias: Halloween Front Lights and Decorations
+  condition: []
+  id: '1504557793311'
+  trigger:
+  - event: sunset
+    offset: +00:15:00
+    platform: sun
+- action:
+  - data:
+      message: Christmas Front Lights and Decorations are ON
+    service: notify.pushbullet
+  - data:
+      entity_id: light.front_left
+      rgb_color:
+      - 0
+      - 0
+      - 255
+    service: light.turn_on
+  - data:
+      entity_id: switch.decorations
+    service: switch.turn_on
+  - data:
+      entity_id: light.front_right
+      rgb_color:
+      - 0
+      - 0
+      - 255
+    service: light.turn_on
+  - data:
+      entity_id: light.back_door_light
+    service: light.turn_on
+  - data:
+      entity_id: switch.decorations_2
+    service: switch.turn_on
+  alias: X-MAS Front Lights and Decorations
+  condition: []
+  id: '1504557793377'
+  trigger:
+  - event: sunset
+    offset: +00:15:00
+    platform: sun
+- action:
+  - data:
+      entity_id: light.shower
+    service: light.turn_on
+  - data:
+      entity_id: switch.on_and_off
+    service: switch.turn_on
+  - delay: 00:05:00
+  - data:
+      entity_id: switch.greenon_yellowoff
+    service: switch.turn_on
+  - delay: 00:15:00
+  - data:
+      entity_id: switch.greenon_yellowoff
+    service: switch.turn_off
+  - delay: 00:10:00
+  - data:
+      entity_id: switch.redon_or_blueoff
+    service: switch.turn_on
+  - delay: 00:10:00
+  - data:
+      entity_id: switch.flashon_alloff
+    service: switch.turn_on
+  - delay: 00:10:00
+  - data:
+      entity_id: switch.greenon_yellowoff
+    service: switch.turn_on
+  - delay: 00:01:00
+  - data:
+      entity_id: switch.on_and_off
+    service: switch.turn_off
+  - data:
+      entity_id: light.shower
+    service: light.turn_off
+  alias: '[Tue-Sat] Shower Time'
+  condition:
+  - condition: time
+    weekday:
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+  id: '1507154685953'
+  trigger:
+  - at: 06:30:00
+    platform: time
+- action:
+  - data:
+      entity_id: light.shower
+    service: light.turn_on
+  - data:
+      entity_id: switch.on_and_off
+    service: switch.turn_on
+  - delay: 00:05:00
+  - data:
+      entity_id: switch.greenon_yellowoff
+    service: switch.turn_on
+  - delay: 00:15:00
+  - data:
+      entity_id: switch.greenon_yellowoff
+    service: switch.turn_off
+  - delay: 00:10:00
+  - data:
+      entity_id: switch.redon_or_blueoff
+    service: switch.turn_on
+  - delay: 00:10:00
+  - data:
+      entity_id: switch.flashon_alloff
+    service: switch.turn_on
+  - delay: 00:10:00
+  - data:
+      entity_id: switch.greenon_yellowoff
+    service: switch.turn_on
+  - delay: 00:01:00
+  - data:
+      entity_id: switch.on_and_off
+    service: switch.turn_off
+  - data:
+      entity_id: light.shower
+    service: light.turn_off
+  alias: '[Mon-Fri] Shower Time'
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  id: '1507154682053'
+  trigger:
+  - at: 06:30:00
+    platform: time
+- action:
+  - data:
+      entity_id: light.shower
+    service: light.turn_on
+  - data:
+      entity_id: switch.on_and_off
+    service: switch.turn_on
+  - delay: 00:05:00
+  - data:
+      entity_id: switch.greenon_yellowoff
+    service: switch.turn_on
+  - delay: 00:15:00
+  - data:
+      entity_id: switch.greenon_yellowoff
+    service: switch.turn_off
+  - delay: 00:10:00
+  - data:
+      entity_id: switch.redon_or_blueoff
+    service: switch.turn_on
+  - delay: 00:10:00
+  - data:
+      entity_id: switch.flashon_alloff
+    service: switch.turn_on
+  - delay: 00:10:00
+  - data:
+      entity_id: switch.greenon_yellowoff
+    service: switch.turn_on
+  - delay: 00:01:00
+  - data:
+      entity_id: switch.on_and_off
+    service: switch.turn_off
+  - data:
+      entity_id: light.shower
+    service: light.turn_off
+  alias: '[Sun-Thu] Shower Time'
+  condition:
+  - condition: time
+    weekday:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+  id: '15071546880'
+  trigger:
+  - at: 06:30:00
+    platform: time
+- action:
+  - data:
+      message: Night time BITCHES
+    service: notify.pushbullet
+  - data:
+      entity_id: light.lupes_salt_rock_lamp
+    service: light.turn_on
+  - data:
+      entity_id: light.kitchen_cabinet
+    service: light.turn_on
+  - data:
+      entity_id: light.makeup_top
+    service: light.turn_on
+  alias: Night time lights ON
+  condition: []
+  id: '1508121067908'
+  trigger:
+  - event: sunset
+    offset: +00:15:00
+    platform: sun
+- action:
+  - data:
+      message: Front Lights are ON
+    service: notify.pushbullet
+  - data:
+      entity_id: light.front_left
+      rgb_color:
+      - 255
+      - 255
+      - 255
+    service: light.turn_on
+  - data:
+      entity_id: light.front_right
+      rgb_color:
+      - 255
+      - 255
+      - 255
+    service: light.turn_on
+  - data:
+      entity_id: light.back_door_light
+    service: light.turn_on
+  alias: Front Lights NORMAL
+  condition: []
+  id: '1509668492586'
+  trigger:
+  - event: sunset
+    offset: +00:15:00
+    platform: sun
+- action:
+  - data:
+      message: THANKSGIVING Lights are ON
+    service: notify.pushbullet
+  - data:
+      entity_id: light.front_left
+      rgb_color:
+      - 255
+      - 69
+      - 0
+    service: light.turn_on
+  - data:
+      entity_id: light.front_right
+      rgb_color:
+      - 255
+      - 69
+      - 0
+    service: light.turn_on
+  - data:
+      entity_id: light.back_door_light
+    service: light.turn_on
+  alias: Front Lights THANKSGIVING
+  condition: []
+  id: '1509668492589'
+  trigger:
+  - event: sunset
+    offset: +00:15:00
+    platform: sun
+- action:
+  - data:
+      entity_id: switch.chelo_charger
+    service: switch.turn_on
+  - delay: 03:00:00
+  - data:
+      entity_id: switch.chelo_charger
+    service: switch.turn_off
+  alias: Chelo Phone Charger
+  condition: []
+  id: '1510276936619'
+  trigger:
+  - at: 03:00:00
+    platform: time
+- action:
+  - data:
+      message: Temperature set to 65, good night
+    service: notify.pushbullet
+  - data:
+      entity_id: climate.first_floor
+      operation_mode: Heat
+      temperature: 65
+    service: climate.set_temperature
+  alias: 'Winter Thermostat Night '
+  condition: []
+  id: '1510281303176'
+  trigger:
+  - at: '23:00:00'
+    platform: time
+- action:
+  - data:
+      message: 2 AM, lights OUT.
+    service: notify.pushbullet
+  - data:
+      entity_id: script.1507158973956
+    service: script.toggle
+  alias: Lights OUT
+  condition:
+  - condition: state
+    entity_id: light.front_right
+    state: 'on'
+  - condition: state
+    entity_id: light.front_left
+    state: 'on'
+  id: '1511108670718'
+  trigger:
+  - at: 02:00:00
+    platform: time
+- action:
+  - data:
+      entity_id: switch.main_light
+    service: switch.turn_on
+  alias: Basement Main Light
+  condition: []
+  id: '1514937795092'
+  trigger:
+  - entity_id: sensor.alarm_level
+    from: '0'
+    platform: state
+    to: '255'
+- action:
+  - data:
+      message: Front Door OPENED.
+    service: notify.pushbullet
+  - data:
+      entity_id: light.hallway_light_level
+    service: light.turn_on
+  alias: Front Door Opened.
+  condition:
+  - condition: state
+    entity_id: device_tracker.lupe
+    state: not_home
+  - condition: state
+    entity_id: device_tracker.chelo
+    state: not_home
+  - after: sunset
+    before: sunrise
+    condition: sun
+  id: '1514937795093'
+  trigger:
+  - entity_id: sensor.front_door_alarm_level
+    from: '0'
+    platform: state
+    to: '255'
+- action:
+  - data:
+      message: Someone came in through the back door.
+    service: notify.pushbullet
+  - data:
+      entity_id: light.kitchen_sink
+    service: light.turn_on
+  alias: Back Door Opened.
+  condition:
+  - condition: state
+    entity_id: device_tracker.lupe
+    state: not_home
+  - condition: state
+    entity_id: device_tracker.chelo
+    state: not_home
+  - before: sunset
+    condition: sun
+  - before: sunrise
+    before_offset: 02:00:00
+    condition: sun
+  id: '5514937795092'
+  trigger:
+  - entity_id: sensor.back_door_alarm_level
+    from: '0'
+    platform: state
+    to: '255'
+- action:
+  - data:
+      entity_id: switch.main_light
+    service: switch.turn_off
+  alias: Basement Light Off
+  condition:
+  - condition: state
+    entity_id: switch.main_light
+    state: 'on'
+  id: '1515365093484'
+  trigger:
+  - entity_id: sensor.basement_motion_sensor
+    for: 00:05:00
+    from: motion detected
+    platform: state
+    to: standby
+- action:
+  - data:
+      entity_id: switch.humidifier
+    service: switch.turn_on
+  - delay: 05:00:00
+  - data:
+      entity_id: switch.humidifier
+    service: switch.turn_off
+  alias: Humidifier
+  condition: []
+  id: '1516077174788'
+  trigger:
+  - at: 00:00:00
+    platform: time
+- action:
+  - data:
+      entity_id: light.kitchen_sink
+    service: light.turn_off
+  alias: Kitchen Sink Light Off
+  condition:
+  - condition: state
+    entity_id: light.kitchen_sink
+    state: 'on'
+  id: Kitchen Sink Light Off
+  trigger:
+  - entity_id: sensor.kitchen_motion_sensor
+    from: motion detected
+    platform: state
+    to: standby
+    for: 00:05:00

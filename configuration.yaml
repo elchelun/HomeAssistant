@@ -1,0 +1,60 @@
+homeassistant:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: 7
+  temperature_unit: F
+  unit_system: imperial
+  time_zone: America/New_York
+  customize: !include customize.yaml
+
+http:
+  api_password: !secret http_pwd
+
+frontend:
+  themes: !include_dir_merge_named themes/
+
+mqtt:
+  broker: !secret mqtt_broker
+  port: !secret mqtt_port
+  client_id: homeassistant-1
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+
+zwave:
+  usb_path: /dev/ttyACM0
+
+#########################################################
+#                       Includes                        #
+#########################################################
+
+### Devices ###
+automation: !include automations.yaml
+climate: !include climate.yaml
+panel_iframe: !include panel_iframe.yaml
+device_tracker: !include device_tracker.yaml
+group: !include groups.yaml
+history_graph: !include history_graph.yaml
+light: !include ligths.yaml
+notify: !include notify.yaml
+recorder: !include recorder.yaml
+script: !include scripts.yaml
+sensor: !include sensor.yaml
+switch: !include switches.yaml
+tts: !include tts.yaml
+
+#########################################################
+#			Enables				#
+#########################################################
+
+config:
+cloud:
+updater:
+discovery:
+conversation:
+history:
+logbook:
+sun:
+emulated_hue:
+python_script:
+

@@ -1,0 +1,9 @@
+#  configurator:
+#    title: Terminal
+#    icon: mdi:console-line
+#    url: !secret panel_terminal
+
+#  appdeamon:
+#    title: Dashboard
+#    icon: mdi:apps
+#    url: !secret dashboard_site

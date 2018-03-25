@@ -1,0 +1,301 @@
+####################################
+#      Groups of Automations       #
+####################################
+  Holidays:
+    name: Holidays
+    control: hidden
+    view: no
+    entities:
+      - automation.front_lights_thanksgiving
+      - automation.halloween_front_lights_and_decorations
+      - automation.xmas_front_lights_and_decorations
+
+  Daily Ones:
+    name: Daily Automations
+    control: hidden
+    view: no
+    entities:
+      - automation.front_lights_normal
+      - automation.lights_out
+      - automation.night_time_lights_on
+      - automation.winter_thermostat_night_
+      - automation.chelo_phone_charger
+      - automation.basement_main_light
+      - automation.basement_light_off
+      - automation.back_door_opened
+      - automation.front_door_opened
+      - automation.kitchen_sink_light_off
+      - automation.humidifier
+
+  Work Days:
+    name: Work
+    control: hidden
+    view: no
+    entities:
+      - automation.monfri_shower_time
+      - automation.sunthu_shower_time
+      - automation.tuesat_shower_time
+
+####################################
+#              Scripts             #
+####################################
+  Scripts:
+    name: HASS Scripts
+    control: hidden
+    view: no
+    entities:
+      - script.1507158973956
+
+####################################
+#         Groups of Devices        #
+####################################
+
+  TV Led:
+    name: TV Led
+    control: hidden
+    view: no
+    entities:
+      - switch.on_and_off
+      - switch.redon_or_blueoff
+      - switch.greenon_yellowoff
+      - switch.orangeon_lightblueoff
+      - switch.pinkon_whiteoff
+      - switch.fadeon_jumpoff
+      - switch.flashon_alloff
+
+  sensor_node_1_card:
+    name: Multisensor Sensor
+    entities:
+      - sensor.basement_temperature
+      - sensor.basement_humidity
+      - sensor.basement_light_sensor
+      - sensor.basement_motion_sensor
+      - sensor.basement_real_feel
+      - light.basement_multisensor_led
+
+
+
+####################################
+#           First Floor            #
+####################################
+  Kitchen:
+    name: Kitchen
+    control: hidden
+    view: no
+    entities:
+      - light.kitchen_level
+      - light.kitchen_cabinet
+      - light.kitchen_sink
+      - light.side_door
+      - sensor.backdoor_status
+      - sensor.kitchen_temperature
+      - sensor.kitchen_real_feel
+      - sensor.kitchen_humidity
+      - sensor.kitchen_motion_sensor
+
+
+  Living Room:
+    name: Living Room
+    control: hidden
+    view: no
+    entities:
+      - light.livingroom_level
+      - switch.livingroom_tv
+      - group.tv_led
+      - sensor.frontdoor_status
+      - light.makeup_top
+      - light.makeup_bottom
+#      - sensor.livingroom_temperature
+#      - sensor.livingroom_real_feel
+#      - sensor.livingroom_humidity
+#      - sensor.livingroom_motion_sensor
+
+  Master Bedroom:
+    name: Master Bedroom
+    control: hidden
+    view: no
+    entities:
+      - switch.master_bedroom_switch
+      - switch.lupes_reading_light
+      - light.lupes_salt_rock_lamp
+      - switch.chelo_charger
+      - switch.humidifier
+
+  Guest Room:
+    name: Guest Room
+    control: hidden
+    view: no
+    entities:
+      - switch.lupe_desk_lamp
+
+  Bathroom:
+    name: Bathroom
+    control: hidden
+    view: no
+    entities:
+      - light.shower
+
+  Hallway:
+    name: Hallway
+    control: hidden
+    view: no
+    entities:
+#      - climate.first_floor
+      - light.hallway_light_level
+
+  People:
+    name: People
+    entities:
+      - device_tracker.chelo
+      - device_tracker.lupe
+
+####################################
+#           Second Floor           #
+####################################
+
+
+####################################
+#           Basement               #
+####################################
+  Lights:
+    name: Basement
+    control: hidden
+    view: no
+    entities:
+      - light.desk_light
+      - light.pantry
+      - light.mqtt_json_light_2
+      - switch.main_light
+      - switch.andy_light
+      - switch.desk_side_light
+      - switch.laundry_light
+      - switch.arcade
+
+  Basement Sensors:
+    name: Sensors
+    control: hidden
+    view: no
+    entities:
+      - sensor.basement_hum
+      - sensor.basement_temp
+      - sensor.basementdoor_status
+
+####################################
+#           Outdoors               #
+####################################
+  Frontyard:
+    name: Front
+    control: hidden
+    view: no
+    entities:
+      - light.front_left
+      - light.front_right
+      - switch.decorations
+
+  Sideyard:
+    name: Side
+    control: hidden
+    view: no
+    entities:
+      - switch.outside_kitchen_switch
+
+  Backyard:
+    name: Back
+    control: hidden
+    view: no
+    entities:
+      - switch.gazebo
+      - light.back_door_light
+      - switch.pond_heater
+
+####################################
+#         Weather prediction       #
+####################################
+  current weather:
+    name: Weather
+    view: no
+    entities:
+      - sun.sun
+      - sensor.weather_summary
+      - sensor.weather_temperature
+      - sensor.weather_apparent_temperature
+      - sensor.weather_daily_low_temperature
+      - sensor.weather_daily_high_temperature
+      - sensor.weather_uv_index
+      - sensor.weather_precip_type
+      - sensor.weather_precip_intensity
+      - sensor.weather_precip_probability
+      - sensor.weather_wind_speed
+      - sensor.weather_cloud_cover
+      - sensor.weather_humidity
+      - sensor.weather_visibility
+      - sensor.weather_minutely_summary
+      - sensor.weather_hourly_summary
+      - sensor.weather_daily_summary
+
+####################################
+#               TABS               #
+####################################
+  default_view:
+#    view: no
+#    name: Home
+
+#  first floor:
+    view: yes
+    name: First Floor
+    entities:
+      - group.kitchen
+      - group.living_room
+      - group.master_bedroom
+      - group.guest_room
+      - group.bathroom
+      - group.hallway
+      - group.people
+
+#  second floor:
+#    view: yes
+#    name: Second Floor
+
+  basement:
+    view: yes
+    name: basement
+    entities:
+      - group.lights
+      - group.basement_sensors
+      - group.sensor_node_1_card
+
+  outdoors:
+    view: yes
+    name: Outdoors
+    entities:
+      - group.frontyard
+      - group.sideyard
+      - group.backyard
+
+  Automation:
+    view: yes
+    name: Automation
+    entities:
+      - group.daily_ones
+      - group.work_days
+      - group.holidays
+
+  scripts:
+    view: yes
+    name: Scripts
+    entities:
+    - group.scripts
+
+  weather:
+    name: Weather
+    view: yes
+    entities:
+    - group.current_weather
+
+  graphs:
+    name: Graphs
+    view: yes
+    entities:
+    - history_graph.thermostate
+    - history_graph.outdoors_lights
+    - history_graph.device_tracker
