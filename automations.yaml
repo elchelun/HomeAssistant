@@ -295,14 +295,11 @@
   - at: 03:00:00
     platform: time
 - action:
+  - data: {}
+    service: shell_command.winter_therm
   - data:
       message: Temperature set to 65, good night
     service: notify.pushbullet
-  - data:
-      entity_id: climate.first_floor
-      operation_mode: Heat
-      temperature: 65
-    service: climate.set_temperature
   alias: 'Winter Thermostat Night '
   condition: []
   id: '1510281303176'

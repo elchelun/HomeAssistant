@@ -40,6 +40,7 @@ notify: !include notify.yaml
 recorder: !include recorder.yaml
 script: !include scripts.yaml
 sensor: !include sensor.yaml
+shell_command: !include shell_command.yaml
 switch: !include switches.yaml
 tts: !include tts.yaml
 
@@ -47,6 +48,7 @@ tts: !include tts.yaml
 #			Enables				#
 #########################################################
 
+api:
 config:
 cloud:
 updater:

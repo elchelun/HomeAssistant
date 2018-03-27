@@ -1,0 +1,1 @@
+  winter_therm: 'python3 /home/homeassistant/.homeassistant/python_scripts/winter_temp.py'
