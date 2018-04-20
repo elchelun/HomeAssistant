@@ -222,7 +222,6 @@
   id: '1508121067908'
   trigger:
   - event: sunset
-    offset: +00:15:00
     platform: sun
 - action:
   - data:
@@ -250,7 +249,6 @@
   id: '1509668492586'
   trigger:
   - event: sunset
-    offset: +00:15:00
     platform: sun
 - action:
   - data:
@@ -352,9 +350,6 @@
   - condition: state
     entity_id: device_tracker.chelo
     state: not_home
-  - after: sunset
-    before: sunrise
-    condition: sun
   id: '1514937795093'
   trigger:
   - entity_id: sensor.front_door_alarm_level
@@ -376,11 +371,6 @@
   - condition: state
     entity_id: device_tracker.chelo
     state: not_home
-  - before: sunset
-    condition: sun
-  - before: sunrise
-    before_offset: 02:00:00
-    condition: sun
   id: '5514937795092'
   trigger:
   - entity_id: sensor.back_door_alarm_level

@@ -52,7 +52,6 @@ api:
 config:
 cloud:
 updater:
-discovery:
 conversation:
 history:
 logbook:
